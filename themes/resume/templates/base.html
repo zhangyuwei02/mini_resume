@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Pelican" />
+    <title>{% block title %}{{ SITENAME }}{% endblock %}</title>
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/resume.css" />
+</head>
+<body>
+    <div class="resume-container">
+        <header>
+            <h1>{{ SITENAME }}</h1>
+        </header>
+        <main>
+            {% block content %}{% endblock %}
+        </main>
+        <footer>
+            <p>&copy; {{ AUTHOR }} - 使用 <a href="https://getpelican.com/">Pelican</a> 生成</p>
+        </footer>
+    </div>
+</body>
+</html> 
